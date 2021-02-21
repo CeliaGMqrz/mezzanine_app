@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}Hello!!{% endblock %}
+
+{% block breadcrumb_menu %}
+<h1>Bienvenido a la mi App Mezzanine</h1>
+<img src="/static/img/avatar.jpg"
+    width="300"
+    height="300">
+{% endblock %}
+
+{% block main %}
+{% blocktrans %}
+<h2>Lista de enlaces!</h2>
+<ul>
+    <li><a href="/admin/">Entrar para administrar el sitio</a></li>
+</ul>
+{% endblocktrans %}
+{% endblock %}
+
